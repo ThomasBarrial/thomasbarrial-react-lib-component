@@ -1,3 +1,5 @@
+const cssModules = require("../src/config/cssModules");
+
 module.exports = {
   stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
@@ -12,4 +14,5 @@ module.exports = {
   typescript: {
     reactDocgen: "react-docgen-typescript-plugin",
   },
+  webpackFinal: cssModules(),
 };

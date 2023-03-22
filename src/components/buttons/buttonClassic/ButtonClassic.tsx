@@ -1,5 +1,5 @@
 import React from "react";
-import "./ButtonClassic.css";
+import styles from "./ButtonClassic.module.css";
 
 export interface ButtonClassicProps {
   label: string;
@@ -11,7 +11,7 @@ export interface ButtonClassicProps {
 const ButtonClassic = (props: ButtonClassicProps) => {
   return (
     <button
-      className="btn"
+      className={styles.btn}
       style={{
         backgroundColor: props.backgroundColor,
         color: props.color,
