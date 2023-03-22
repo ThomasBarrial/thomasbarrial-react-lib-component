@@ -6,7 +6,7 @@ export interface IProps {
 }
 
 const CardClassic = (props: IProps) => {
-  return <div className={styles.card}>{props.label}</div>;
+  return <div className={`${styles.card}`}>{props.label}</div>;
 };
 
 export default CardClassic;
